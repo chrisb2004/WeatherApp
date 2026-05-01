@@ -1,0 +1,9 @@
+.teardrop {
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+  
+.teardrop-selected {
+    transform: scale(1.4);
+}

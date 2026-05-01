@@ -1,0 +1,19 @@
+#side-panel {
+    width: 90vw;
+    min-width: 200px;
+    margin: 1rem auto;
+    z-index: 999;
+}
+
+.panel-wrapper {
+    padding: 1rem;
+    background: rgba(109, 109, 109, 0.45);
+    border-radius: 1rem;
+    transform: translateY(200%);
+    transition: transform 0.3s ease-out;
+}
+
+.panel-wrapper.selection-made {
+    transform: translateY(0);
+}
+
