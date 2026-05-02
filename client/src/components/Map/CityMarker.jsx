@@ -61,6 +61,7 @@ export default function CityMarker({ canton, isSelected, onSelect }) {
   
     return (
         <Marker
+            id='canton-marker' 
             ref={markerRef}
             position={[canton.lat, canton.lon]}
             icon={icon}
