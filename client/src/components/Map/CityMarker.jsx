@@ -50,6 +50,7 @@ export default function CityMarker({ canton, isSelected, onSelect }) {
         if (!el) return
 
         const teardrop = el.querySelector('.teardrop')
+        
         if (!teardrop) return
 
         if (isSelected) {
