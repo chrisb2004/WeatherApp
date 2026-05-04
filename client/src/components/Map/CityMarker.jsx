@@ -50,6 +50,7 @@ export default function CityMarker({ canton, isSelected, onSelect }) {
         if (!el) return
 
         const teardrop = el.querySelector('.teardrop')
+        
         if (!teardrop) return
 
         if (isSelected) {
@@ -61,6 +62,7 @@ export default function CityMarker({ canton, isSelected, onSelect }) {
   
     return (
         <Marker
+            id='canton-marker' 
             ref={markerRef}
             position={[canton.lat, canton.lon]}
             icon={icon}

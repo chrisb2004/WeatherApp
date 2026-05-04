@@ -1,7 +1,10 @@
-#side-panel {
+#weather-panel {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     width: 90vw;
     min-width: 200px;
-    margin: 1rem auto;
     z-index: 999;
 }
 
@@ -9,11 +12,12 @@
     padding: 1rem;
     background: rgba(109, 109, 109, 0.45);
     border-radius: 1rem;
-    transform: translateY(200%);
+    transform: translateY(150%);
     transition: transform 0.3s ease-out;
+    pointer-events: none;
 }
 
 .panel-wrapper.selection-made {
     transform: translateY(0);
+    pointer-events: auto;
 }
-

@@ -2,7 +2,7 @@ import './WeatherPanel.css'
 
 export default function WeatherPanel({ selectedCanton }) {
     return (
-        <section id="side-panel">
+        <section id="weather-panel">
             <div className={`panel-wrapper ${selectedCanton ? 'selection-made' : ''}`}>
                 <div className="panel-body">
                     <h1>Costa Rican weather</h1>

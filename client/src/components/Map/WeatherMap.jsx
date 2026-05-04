@@ -7,6 +7,11 @@ function SelectedCantonView({ canton }) {
     const map = useMap()
 
     useEffect(() => {
+        // exposing the map to be able to test flyTo()
+        if (window.Cypress) {
+            window.__map__ = map
+        }
+      
         if (!canton) return
 
         map.flyTo([canton.lat, canton.lon], 12, {
@@ -42,9 +47,7 @@ export default function WeatherMap({ selectedId, onSelectId, selectedCanton }) {
                     onSelect={() => onSelectId(
                         selectedId === canton.id ? null : canton.id
                     )}
-                />
-
-                
+                />                
             ))}
         </MapContainer>
     )

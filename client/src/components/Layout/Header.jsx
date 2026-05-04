@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import WeatherMap from '../Map/WeatherMap'
+import WeatherMap from '../map/WeatherMap'
 import WeatherPanel from '../UI/WeatherPanel';
 import { cantones } from '../../data/cantones'
 import './Header.css'
