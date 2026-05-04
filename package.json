@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^7.1.0",
+    "null-loader": "^4.0.1"
+  }
+}
