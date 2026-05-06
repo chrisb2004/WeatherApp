@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import WeatherMap from '../map/WeatherMap'
+import WeatherMap from './map/WeatherMap'
 import WeatherPanel from '../UI/WeatherPanel';
 import { cantones } from '../../data/cantones'
 import './Header.css'
@@ -22,9 +22,12 @@ function Header() {
                 />
             </div>
 
-            <WeatherPanel selectedCanton={selectedCanton} />
+            <WeatherPanel 
+                selectedCanton={selectedCanton} 
+            />
         </div>
     )
 }
+
 
 export default Header;

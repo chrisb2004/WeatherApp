@@ -1,6 +1,6 @@
 import { useEffect } from 'react' 
 import { MapContainer, TileLayer, useMap } from 'react-leaflet'
-import CityMarker from './CityMarker'
+import CityMarker from '../map/CityMarker'
 import { cantones } from '../../data/cantones'
 
 function SelectedCantonView({ canton }) {
